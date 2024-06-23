@@ -1,20 +1,12 @@
-import Image from "next/image";
-import homeImg from "@/public/home.jpg";
+import homeImg from "public/bitcoin-mine-2.jpg";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        Home Page
-        <div className="absolute -z-10 inset 0">
-          <Image
-            src={homeImg}
-            alt="car plant"
-            fill
-            style={{ objectFit: "cover" }}
-          />
-        </div>
-      </div>
-    </div>
+    <Hero
+      imgData={homeImg}
+      imgAlt="car factory"
+      title="American Green Bitcoin Mining"
+    />
   );
 }
